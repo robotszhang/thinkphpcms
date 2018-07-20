@@ -1,0 +1,28 @@
+<!--
+必选字段：
+inputname
+inputvalue
+可选字段：
+placeholder
+-->
+
+<?php
+    $placeholder = "[placeholder]";
+    $placeholder =  $placeholder?$placeholder:'选择时间';
+?>
+<div class="input-group" style="width:160px;">
+    <input type="text" class="form-control form-control-sm" name="[inputname]" placeholder="{$placeholder}" value="[inputvalue]" >
+    <div class="input-group-append">
+        <span class="input-group-text">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+    </div>
+</div>
+<script>
+    //日期选择器
+    $("input[name='[inputname]']").flatpickr({
+        enableTime: false,
+        dateFormat: "Y-m-d",
+        locale: "zh"
+    });
+</script>

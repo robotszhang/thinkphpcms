@@ -1,0 +1,87 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+
+    <div class="u-breadcrumb">
+        <a class="back" href="javascript:history.back()" ><span class="fa fa-chevron-left"></span> 后退</a>
+        <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+        <span class="name">新增地图</span>
+    </div>
+    <div class="h15"></div>
+
+    <form method="post">
+        <div class="form-group">
+            <label><span class="text-danger">* </span>地图标题</label>
+            <input type="text" class="form-control" name="title" placeholder="地图标题" style="width:400px;" value="" />
+            <small class="form-text text-muted">1-100个字符</small>
+        </div>
+
+        <div class="form-group">
+            <label><span class="text-danger">* </span>地址选择</label>
+            <div>
+                <include file="Include/amap_choose" input_lng="lng" input_lat="lat" input_zoom="zoom" lng="" lat="" zoom="15" width="600" height="400" />
+            </div>
+            <small class="form-text text-muted"></small>
+        </div>
+
+        <div class="form-group">
+            <label>描述</label>
+            <div>
+                <include file="Include/ueditor_full" inputname="body" inputvalue="" />
+            </div>
+            <small class="form-text text-muted">地图说明，如交通路线</small>
+        </div>
+
+        <div class="form-group">
+            <label>地址</label>
+            <input type="text" class="form-control" name="address" placeholder="地址" style="width:400px;" value="" />
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>电话</label>
+            <input type="text" class="form-control" name="phone" placeholder="电话" style="width:400px;" value="" />
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>邮箱</label>
+            <input type="text" class="form-control" name="email" placeholder="邮箱" style="width:400px;" value="" />
+            <small class="form-text text-muted"></small>
+        </div>
+
+        <div class="form-group">
+            <label>QQ</label>
+            <input type="text" class="form-control" name="qq" placeholder="QQ" style="width:400px;" value="" />
+            <small class="form-text text-muted"></small>
+        </div>
+
+        <div class="h10"></div>
+        <button type="submit" class="btn btn-primary">保存</button>
+    </form>
+    <script>
+        //提交编辑
+        /*function post_create(){
+            var data = $('form').serializeObject();
+            data.description = editor_description.getData();
+            $.ajax({
+                type:'post',
+                url:'/admin/map/create_edit',
+                data:data,
+                success:function(res){
+                    if(res.status == 0){
+                        $boot.warn({text:res.msg},function(){
+                            $('input[name='+res.field+']').focus();
+                        });
+                    }else{
+                        $boot.success({text:res.msg},function(){
+                            window.location = "{{ url()->previous() }}";
+                        });
+                    }
+                }
+            })
+            return false;
+        }*/
+
+    </script>
+
+</block>

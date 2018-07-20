@@ -1,0 +1,1 @@
+<?phpnamespace Common\Model;use Common\Model\_CateModel;/** * 商品分类  继承_CateModel类 * @author john * */class ProductCateModel extends _CateModel{}

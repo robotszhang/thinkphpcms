@@ -1,0 +1,1 @@
+<?phpnamespace Common\Model;use Common\Model\_BaseModel;class StaffModel extends _BaseModel{}

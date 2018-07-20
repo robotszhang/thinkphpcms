@@ -1,0 +1,48 @@
+<!--
+必填参数：
+inputname
+inputvalue
+可选参数：
+editsize = [1,2,3,4]
+-->
+
+<?php
+    $editsize1 = [editsize];
+    $editsize1 = count($editsize1) == 1?['100%','560','800','1000']:$editsize1;
+?>
+<div id="[inputname]_editor">
+    <div class="g_editsize">
+        <volist name="editsize1" id="vo" key="k">
+            <eq name="k" value="1">
+                <div class="size_item"><a class="on" href="#">{$vo}</a></div>
+                <else />
+                <div class="size_item"><a href="#">{$vo}</a></div>
+            </eq>
+        </volist>
+    </div>
+    <textarea id="[inputname]_content" name="[inputname]" style="height:500px;width:100%;position:relative;z-index:1;">[inputvalue]</textarea>
+</div>
+
+<script>
+    (function(){
+        //实例化编辑器
+        var editor = UE.getEditor('[inputname]_content');
+        //改变编辑器大小
+        $("#[inputname]_editor .size_item a").click(function(){
+            $("#[inputname]_editor .size_item a").removeClass('on');
+            $(this).addClass('on');
+            var $val = $(this).text();
+            if($val == '100%'){
+                $val = $("body").width()-40;
+            }
+            var $content = editor.getContent();
+            editor.destroy();
+            editor = UE.getEditor('[inputname]_content',{
+                'initialContent':$content,
+                'initialFrameWidth':$val
+            });
+            return false;
+        });
+    })();
+
+</script>

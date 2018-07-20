@@ -1,0 +1,173 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+    <div class="clearfix">
+        <div class="float-left">
+            <div class="u-breadcrumb">
+                <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+                <span class="name">数据库表</span>
+            </div>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="h10"></div>
+
+<table class="table table-bb">
+    <form action="{:U('export')}" id="export-form" method="post">
+        <tr>
+            <th width="30">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input checkbox-all" id="checkbox-0">
+                    <label class="custom-control-label"  for="checkbox-0"></label>
+                </div>
+            </th>
+            <th>表名</th>
+            <th>递增值</th>
+            <th>数据大小</th>
+            <th>引擎</th>
+            <th>排序规则</th>
+            <th>创建时间</th>
+        </tr>
+        <volist name='list' id='table'>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input checkbox-item" id="checkbox-{$table.name}" name="tables[]" value="{$table.name}" data-print-url="{:U('GoodsOrderPrint/print_view',array('id'=>$vo['id']))}" data-id="{$table.name}">
+                        <label class="custom-control-label"  for="checkbox-{$table.name}"></label>
+                    </div>
+                </td>
+                <td>{$table.name}</td>
+                <td>{$table.rows}</td>
+                <td>{$table.data_length|format_bytes}</td>
+                <td>{$table.engine}</td>
+                <td>{$table.collation}</td>
+                <td>{$table.create_time}</td>
+            </tr>
+        </volist>
+    </form>
+</table>
+
+    <div>
+        <button id="export" type="button" class="btn btn-secondary btn-sm" ><i class="fa fa-files-o"></i> <span>立即备份</span></button>
+    </div>
+
+
+<script>
+
+        var $form = $("#export-form"), $export = $("#export");
+
+        //$optimize = $("#optimize"), $repair = $("#repair");
+
+       /* function repair_one(table_name){
+            $boot.confirm({text:'确认修复该数据表？'},function(){
+                $.ajax({
+                    type:'post',
+                    url:'{:U("repair")}',
+                    data:{table_arr:[table_name]},
+                    success:function(res){
+                        if(res.status == 1){
+                            $boot.success({text:res.info});
+                        }else{
+                            $boot.error({text:res.info});
+                        }
+                    }
+                });
+            });
+            return false;
+        }
+
+        function repair_all(){
+            var ids = [];
+            $('.checkbox-item').filter(':checked').each(function(){
+                ids.push($(this).attr('data-id'));
+            });
+            if(ids.length < 1){
+                $boot.error({text:'请至少选择一个选项'});
+                return false;
+            }
+        }*/
+
+
+       /*function table_backup(){
+           var ids = [];
+           $('.checkbox-item').filter(':checked').each(function(){
+               ids.push($(this).attr('data-id'));
+           });
+           if(ids.length < 1){
+               $boot.error({text:'请至少选择一个选项'});
+               return false;
+           }
+           $boot.confirm({text:'确认备份所选数据表？'},function(){
+               $.ajax({
+                   type:'post',
+                   url:'{:U("backup")}',
+                   data:{table_arr:ids},
+                   success:function(res){
+                       if(res.status == 1){
+                           $boot.success({text:res.info});
+                       }else{
+                           $boot.error({text:res.info});
+                       }
+                   }
+               });
+           });
+       }*/
+
+        /**
+         * 初始化备份
+         * @param tab
+         * @param status
+         */
+        var loading;
+        $export.click(function() {
+            $(this).addClass("disabled");
+            $(this).find('span').html("正在发送备份请求...");
+            $.ajax({
+                type:'post',
+                url:$form.attr("action"),
+                data:$form.serialize(),
+                success:function(data){
+                    if(data.status){
+                        //tables = data.tables;
+                        loading = $boot.loading({text:"备份进行中...，请勿关闭此页面！"});
+                        backup(data.tab, true);
+                    }else{
+                        $boot.error({text:data.info});
+                        $export.removeClass("disabled");
+                        $export.find('span').html("立即备份");
+                    }
+                }
+            });
+            return false;
+        });
+
+        /**
+         * 备份主流程
+         * @param tab
+         * @param status
+         */
+        function backup(tab, status){
+            $.get($form.attr("action"), tab, function(data){
+                if(data.status){
+                    //showmsg(tab.id, data.info);
+                    if(!$.isPlainObject(data.tab)){
+                        loading.close();
+                        $export.removeClass("disabled");
+                        $export.find('span').html("备份完成，点击重新备份");
+                        $boot.success({text:'备份完成！'});
+                        return false;
+                    }
+                    backup(data.tab, tab.id != data.tab.id);
+                } else {
+                    loading.close();
+                    $boot.error({text:'备份出错'});
+                    $export.removeClass("disabled");
+                    $export.find('span').html("备份出错，点击重新备份");
+                }
+            }, "json");
+        }
+</script>
+</block>

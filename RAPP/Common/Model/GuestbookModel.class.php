@@ -1,0 +1,1 @@
+<?phpnamespace Common\Model;use Common\Model\_BaseModel;class GuestbookModel extends _BaseModel{	}

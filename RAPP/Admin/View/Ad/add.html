@@ -1,0 +1,77 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+    <div class="u-breadcrumb">
+        <a class="back" href="javascript:history.back()" ><span class="fa fa-chevron-left"></span> 后退</a>
+        <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+        <span class="name">新增链接</span>
+    </div>
+    <div class="h15"></div>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label><span class="text-danger">* </span>链接分类</label>
+            <select class="form-control" name="cate_id" id="itemsids" style="width:400px;">
+                <volist name="catelist" id="item">
+                    <eq name="item.id" value="$Think.get.cate_id">
+                        <option onclick="selectid({$item.id})" value="{$item.id}" selected>
+                            {$item.name}
+                        </option>
+                        <else/>
+                        <option value="{$item.id}">{$item.name}</option>
+                    </eq>
+                </volist>
+            </select>
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>链接标题</label>
+            <div class="form-inline">
+                <input type="text" class="form-control" name="title" placeholder="链接标题" style="width:400px;" value="{$page.title}" />
+            </div>
+            <small class="form-text text-muted">1-100个字符</small>
+        </div>
+        <div class="form-group">
+            <label>图片</label>
+            <include file="Include/upload_img_one" inputid="upload_img_one" inputname="thumb" inputvalue="" size="6" tip="，图片大小{$cate_pic_size.width}×{$cate_pic_size.height}px" />
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>链接</label>
+            <div class="form-inline">
+                <input type="text" class="form-control" name="url" placeholder="链接" style="width:400px;" value="http://" />
+            </div>
+            <small class="form-text text-muted">链接请以“http://”开头</small>
+        </div>
+        <div class="form-group">
+            <label>打开方式</label>
+            <select class="form-control" name="target" style="width:400px;">
+                <eq name="page.target" value="_blank">
+                    <option value="_self">_self</option>
+                    <option value="_blank" selected>_blank</option>
+                <else/>
+                    <option value="_self" selected>_self</option>
+                    <option value="_blank">_blank</option>
+                </eq>
+            </select>
+            <small class="form-text text-muted">_self当前窗口，_blank新窗口</small>
+        </div>
+        <div class="form-group">
+            <label>到期时间</label>
+            <include file="Include/picker_datetime" inputname="end_at" placeholder="到期时间" inputvalue="{:date('Y-m-d H:i:s', strtotime('+10 year'))}" />
+            <small class="form-text text-muted">默认10年</small>
+        </div>
+        <button type="submit" class="btn btn-primary">保存</button>
+    </form>
+
+
+    <script type="text/javascript">
+        //分类切换（需要标志当前pid）
+        $("#itemsids").change(function(){
+            var $id=$(this).val();
+            window.location = "{:U('Ad/add')}"+"?cate_id="+$id;
+        });
+    </script>
+
+</block>

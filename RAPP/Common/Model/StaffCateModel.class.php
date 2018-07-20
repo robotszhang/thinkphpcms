@@ -1,0 +1,1 @@
+<?phpnamespace Common\Model;use Common\Model\_CateModel;class StaffCateModel extends _CateModel{	  }

@@ -1,0 +1,85 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+    <div class="clearfix">
+        <div class="float-left">
+            <div class="u-breadcrumb">
+                <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+                <span class="name">链接</span>
+            </div>
+        </div>
+        <div class="float-right">
+            <a href="{:U('Map/add')}?cate_id={$cate_id}" role="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 新增地图</a>
+        </div>
+    </div>
+    <div class="h10"></div>
+
+    <form action="{:U('Map/index')}" method="get" name="form1">
+        <div class="form-inline">
+            地图标题：
+            <input class="form-control form-control-sm mr-1" name="title" placeholder="关键字" value="{$Think.get.title}" />
+            <button class="btn btn-primary btn-sm" type="submit">筛选</button>
+        </div>
+    </form>
+
+    <div class="h10"></div>
+    <table class="table table-bb">
+        <tr>
+            <th width="30">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input checkbox-all" id="checkbox-0">
+                    <label class="custom-control-label"  for="checkbox-0"></label>
+                </div>
+            </th>
+            <th>ID</th>
+            <th>地图标题</th>
+            <th>经纬度</th>
+            <th>地址</th>
+            <th>发布时间</th>
+            <th>操作</th>
+        </tr>
+        <volist name="list" id="vo">
+            <tr class="tr_{$vo.id}">
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input checkbox-item" id="checkbox-{$vo.id}" value="{$vo.id}" data-print-url="{:U('GoodsOrderPrint/print_view',array('id'=>$vo['id']))}" data-id="{$vo.id}">
+                        <label class="custom-control-label"  for="checkbox-{$vo.id}"></label>
+                    </div>
+                </td>
+                <td>{$vo.id}</td>
+                <td>{$vo.title}</td>
+                <td>
+                    {$vo.lng}-{$vo.lat}
+                </td>
+                <td>{$vo.address}</td>
+                <td>{$vo.created_at|date='Y-m-d H:i',###}</td>
+                <td>
+                    <a class="btn btn-sm btn-outline-secondary" href="{:U('Map/edit',array('id'=>$vo['id']))}" role="button"><i class="fa fa-edit"></i> 编辑</a>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            更多
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="return del_one('Map','{$vo.id}')"><i class="fa fa-trash"></i> 删除</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </volist>
+    </table>
+
+    <div>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="return del_all('Map');"><i class="fa fa-trash"></i> 删除</button>
+    </div>
+
+    <notempty name="pages">
+        <div class="h10"></div>
+        <div class="g_pages"><div class="in">{$pages}</div></div>
+    </notempty>
+
+
+    <script>
+
+    </script>
+</block>

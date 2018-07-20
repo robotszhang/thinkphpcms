@@ -1,0 +1,160 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+    <div class="clearfix">
+        <div class="float-left">
+            <div class="u-breadcrumb">
+                <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+                <span class="name">链接</span>
+            </div>
+        </div>
+        <div class="float-right">
+            <a href="{:U('Ad/add')}?cate_id={$cate_id}" role="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> 新增链接</a>
+        </div>
+    </div>
+    <div class="h10"></div>
+
+    <form action="{:U('Ad/index')}" method="get" name="form1">
+        <div class="form-inline">
+            选择分类：
+            <select class="form-control form-control-sm" name="cate_id">
+                <option value="">全部</option>
+                <volist name="catelist" id="item">
+                    <eq name="item.id" value="$Think.get.cate_id">
+                        <option value="{$item.id}" selected>{$item.name}</option>
+                    <else/>
+                        <option value="{$item.id}">{$item.name}</option>
+                    </eq>
+                </volist>
+            </select>
+        </div>
+    </form>
+
+    <div class="h10"></div>
+    <table class="table table-bb">
+        <tr>
+            <th width="30">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input checkbox-all" id="checkbox-0">
+                    <label class="custom-control-label"  for="checkbox-0"></label>
+                </div>
+            </th>
+            <th>ID</th>
+            <th>图像</th>
+            <th>所在分类</th>
+            <th>标题</th>
+            <th width="30%">链接</th>
+            <th>排序</th>
+            <th>是否过期</th>
+            <th width="140">操作</th>
+        </tr>
+        <volist name="list" id="vo">
+            <tr class="tr_{$vo.id}">
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input checkbox-item" id="checkbox-{$vo.id}" value="{$vo.id}" data-print-url="{:U('GoodsOrderPrint/print_view',array('id'=>$vo['id']))}" data-id="{$vo.id}">
+                        <label class="custom-control-label"  for="checkbox-{$vo.id}"></label>
+                    </div>
+                </td>
+                <td>{$vo.id}</td>
+                <td>
+                    <notempty name="vo.thumb">
+                        <img src="{$vo.thumb}" height="40"/>
+                    <else />
+                        --
+                    </notempty>
+                </td>
+                <td>
+                    <volist name="catelist" id="voo">
+                        <eq name="voo.id" value="$vo.cate_id">
+                            {$voo.name}
+                        </eq>
+                    </volist>
+                </td>
+                <td>
+                    <notempty name="vo.title">
+                        {$vo.title}
+                        <else />
+                        --
+                    </notempty>
+                </td>
+                <td><div class="word-break">{$vo.url}</div></td>
+                <td>
+                    <div class="form-inline">
+                        <input class="form-control form-control-sm w-40" type="text" name="sort" value="{$vo.sort}" old-sort="{$vo.sort}" data-id="{$vo.id}" sort-id="{$vo.id}" />&nbsp;
+                        <a class="blue" href="#" onclick="return sort_one('Ad',{$vo.id})">更新</a>
+                    </div>
+                </td>
+                <td>
+                    <gt name="NOW_TIME" value="$vo.end_at">
+                        <span class="badge badge-secondary">已过期</span>
+                    <else />
+                        <span class="badge badge-success">正常</span>
+                    </gt>
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-outline-secondary" href="{:U('Ad/edit',array('id'=>$vo['id'],'jump_url'=>array_encode($_GET)))}" role="button"><i class="fa fa-edit"></i> 编辑</a>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            更多
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="return del_one('Ad','{$vo.id}')"><i class="fa fa-trash"></i> 删除</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </volist>
+    </table>
+
+    <div>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="return del_all('Ad');"><i class="fa fa-trash"></i> 删除</button>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="return sort_all('Ad');"><i class="fa fa-sort"></i> 排序</button>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="return alert_move_content();"><i class="fa fa-exchange"></i> 移动到</button>
+    </div>
+
+    <notempty name="pages">
+        <div class="h10"></div>
+        <div class="g_pages"><div class="in">{$pages}</div></div>
+    </notempty>
+
+    <!--内容迁移-->
+    <div id="move_content" style="display: none;">
+        <div class="form-group">
+            <label><span class="text-danger">* </span>移动至</label>
+            <select class="form-control" name="to_id">
+                <volist name="catelist" id="vo">
+                    <option value="{$vo.id}">{$vo.name}</option>
+                </volist>
+            </select>
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="h10"></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary" onclick="return move_content_all('Ad',$('select[name=to_id]').val());">移动</button>
+        </div>
+    </div>
+
+    <script>
+        //选择分类后提交表单
+        $("select[name=cate_id]").change(function(){
+            $("form[name=form1]").submit();
+        });
+
+        //弹出选择框
+        function alert_move_content(){
+            var ids = [];
+            $('.checkbox-item').filter(':checked').each(function(){
+                ids.push($(this).attr('data-id'));
+            });
+            if(ids.length < 1){
+                $boot.error({text:'请至少选择一个选项'});
+                return false;
+            }
+            $boot.win({id:'#move_content','title':'移动到'});
+            return false;
+        }
+
+    </script>
+</block>

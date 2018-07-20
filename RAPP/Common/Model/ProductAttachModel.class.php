@@ -1,0 +1,1 @@
+<?phpnamespace Common\Model;use Common\Model\_BaseModel;class ProductAttachModel extends _BaseModel {    /**     * @return mixed     * 统一获取用于select组件的特惠数据     */    public function get_select_attach()    {        $attach = $this->order('sort,id')->select();        return $attach;    }}

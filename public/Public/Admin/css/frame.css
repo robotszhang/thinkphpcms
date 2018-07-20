@@ -1,0 +1,125 @@
+/* CSS Document */
+html,body{ margin:0px; padding:0px;color:#333; font-family:Arial, Helvetica, sans-serif;}
+body{font-size: 14px; overflow: hidden;}
+ul,li,dl,dt,dd,p,table{ margin:0px; padding:0px; list-style:none;}
+h1,h2,h3,h4,h5,h6,input,div,form{ margin:0px; padding:0px;}
+a{ color:#333; text-decoration:none; cursor: pointer;}
+a:hover{ text-decoration:none;}
+a:active{outline: none;}
+img{ border:none;vertical-align:middle;}
+table,th,td{ border-collapse:collapse;}
+.clear{ clear:both; overflow:hidden;height:0px;}
+.wrap{ width:1000px; margin:0 auto;}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+.text-primary{color:#007bff;}
+
+
+/*高度*/
+.h5{ height: 5px;}
+.h10{ height: 10px;}
+.h15{ height: 15px;}
+.h20{ height: 20px;}
+.h25{ height: 25px;}
+.h30{ height: 30px;}
+.h35{ height: 35px;}
+.h40{ height: 40px;}
+.h45{ height: 45px;}
+.h50{ height: 50px;}
+.h55{ height: 55px;}
+.h60{ height: 60px;}
+
+/*字体大小*/
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f22{font-size:22px;}
+.f24{font-size:24px;}
+.f26{font-size:26px;}
+.f28{font-size:28px;}
+
+.form-control-lg{ font-size: 1rem;border-radius:0px;}
+
+/**-----------------------------------------------登录-----------------------------------------------*/
+.m-login-head{ height: 65px; width: 1000px; margin:0 auto;padding:0 0 15px 0;border-bottom:#ddd 1px solid;}
+.m-login-head .logo{ float: left;}
+.m-login-head .name{ float: left; height:20px; line-height: 20px;margin:20px 0 0 15px;padding:0 0 0 10px;border-left:#ddd 1px solid;}
+
+.m-login{ width: 400px;margin:0 auto;}
+.m-login .item{}
+.m-login .item .form-control-lg{margin:10px 0 0 0; position: relative; z-index: 1;}
+.m-login .verify{ border:#ddd 1px solid;margin:10px 0 0 0;text-align: center;}
+
+
+.m-copyright{ text-align: center;font-size: 14px;}
+
+
+
+
+/**************************default-框架*****************************/
+
+/*左侧*/
+.lay_default_left{position:relative;float:left;width:180px;margin-right:-180px; height:100%; background:#005bbd; position:relative; z-index: 2;}
+/*右侧*/
+.lay_default_right{float:right;width:100%;height:100%;}
+
+.m-frame-logo{ text-align: center;margin:10px 0 0 0;}
+/*菜单控制按钮*/
+.m-frame-sidenav-control{ height: 20px; line-height: 20px; width: 40px; font-size: 20px;margin:6px 0 0 12px; cursor: pointer;color:#e0e6ee;}
+/*二级菜单*/
+.m-frame-sidenav{ width:180px;}
+.m-frame-sidenav ul{ width:180px; float:left;margin:1px 0 0 0;}
+.m-frame-sidenav ul li{ width:100%; float:left;margin:3px 0 0 0; position: relative;background:rgba(255,255,255,0.1); transition:all 1s;}
+.m-frame-sidenav ul li:hover{background:rgba(255,255,255,0.3);}
+.m-frame-sidenav ul li a.item{display:block;padding:0 5px 0 10px; height:36px; line-height:36px;font-size: 14px;color:#fff;position: relative; z-index: 2;box-sizing: border-box; cursor: pointer;}
+.m-frame-sidenav ul li a.item:hover{color:#fff;}
+.m-frame-sidenav ul li a.item .icon{padding:0 2px 0 0;}
+.m-frame-sidenav ul li a.item .arrow{ float: right; width: 20px; height: 20px; margin:8px 8px 0 0; text-align: center; line-height: 20px; font-size: 10px;}
+.m-frame-sidenav ul li a.item .arrow-2{display:none;}
+.m-frame-sidenav ul li.on a.item .arrow-1{display:none;}
+.m-frame-sidenav ul li.on a.item .arrow-2{display:inline;}
+.m-frame-sidenav ul li.on .handle{display:block;}
+.m-frame-sidenav ul li .handle{z-index: 1; display: none;}
+.m-frame-sidenav ul li .handle dl{width:100%; float:left;}
+.m-frame-sidenav ul li .handle dd{width:100%; height:36px; float:left;}
+.m-frame-sidenav ul li .handle dd a{ display:block; padding:0 5px 0 20px; height:36px; line-height:36px;color:#fff;overflow:hidden;font-size:14px;cursor:pointer;transition:all .5s;}
+.m-frame-sidenav ul li .handle dd.on a{background:rgba(0,0,0,0.3); color:#fff;}
+.m-frame-sidenav ul li .handle dd a:hover{background:rgba(0,0,0,0.3);text-decoration:none;color:#fff;}
+
+/*版本*/
+.g-vision{ height: 30px; line-height: 30px;color:#bfcde0; text-align:center;margin:20px 0 0 0;}
+
+/*右侧顶部*/
+.m-frame-top{ height:40px; background:#ffffff;position:relative; z-index:100;margin-left:180px;box-shadow:0 1px 0px rgba(0,0,0,0.05)}
+.m-frame-top .user{ float:right; display:inline; margin:0px 20px 0 0; height:40px; line-height:40px;}
+.m-frame-top .user a{}
+/*一级菜单*/
+.m-frame-nav{ float:left;margin:0 0 0 0;font-size:14px;}
+.m-frame-nav ul{float:left;height:36px;}
+.m-frame-nav ul li{float:left;height:36px;line-height:36px;padding:0 15px;cursor:pointer;border-radius:3px;color:#444;}
+.m-frame-nav ul li.on{font-weight: bold;color:#007bff;}
+.m-frame-nav ul li:hover{font-weight: bold;}
+
+/*选项卡*/
+.m-frame-tab{height:40px;background:#ffffff;position:relative;padding:0 10px;}
+.m-frame-tab .prev{width:20px;height:20px;font-size:18px;line-height:16px;text-align:center;position:absolute;left:0px;top:10px;cursor:pointer;background:rgba(255,255,255,0.5);border-radius:50%;}
+.m-frame-tab .next{width:20px;height:20px;font-size:18px;line-height:16px;text-align:center;position:absolute;right:0px;top:10px;cursor:pointer;background:rgba(255,255,255,0.5);border-radius:50%;}
+.m-frame-tab .contain_wrap{height:40px;padding:0 25px;}
+.m-frame-tab .contain{height:40px;position:relative;overflow:hidden;}
+.m-frame-tab .contain ul{width:9999px;height:40px;position:absolute;left:0px;}
+.m-frame-tab .contain ul li{float:left;margin:12px 2px 0 0;height:26px;background:#f8f8f8;color:#1d2939;position:relative;cursor:default;border-radius:3px; font-size: 13px;}
+.m-frame-tab .contain ul li a.refresh{display:none;width:20px;height:20px; position: absolute;left:6px;top:5px;background: url("../images/icon_refresh.png") 30% 30% no-repeat;}
+.m-frame-tab .contain ul li span.title{display:block;padding:0 26px 0 8px;height:26px;line-height:26px;margin:0 0 0 20px;overflow:hidden;}
+.m-frame-tab .contain ul li a.close-btn{display:block;width:16px;height:16px;line-height:16px;text-align:center;color:#1d2939;position:absolute;right:7px;top:5px;color:#333;cursor:pointer;border-radius:9px;}
+.m-frame-tab .contain ul li a.close-btn:hover{color:#fff;text-decoration:none; background: #455062;}
+.m-frame-tab .contain ul li.on{background:#f0f0f0;height:30px;margin:10px 2px 0 0;border-radius:3px 3px 0 0;}
+.m-frame-tab .contain ul li.on a.close:hover{color:#fff;text-decoration:none;}
+.m-frame-tab .contain ul li.on a.refresh{ display: block;}
+.m-frame-tab .contain ul li.on span.title{ height: 30px; line-height: 30px;}
+.m-frame-tab .contain ul li.on a.close-btn{top:7px;}
+
+.lay_default_right_con{margin-left:180px;height:100%;position:relative;}
+.lay_default_right_con iframe{ width:100%; height:100%; border:none;position:absolute;left:0px;top:40px;margin:0px;padding:0px;}

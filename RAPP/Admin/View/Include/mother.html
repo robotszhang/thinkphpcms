@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta name="wap-font-scale" content="no">  <!--解决UC字体忽然变大-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <block name="title">
+        <notempty name="page.title">
+            <title>{$page.title}</title>
+            <else />
+            <title>{$setting.sitename}</title>
+        </notempty>
+    </block>
+    <notempty name="page.keywords">
+        <meta name="keywords" content="{$page.keywords}"/>
+        <else />
+        <meta name="keywords" content="{$setting.keywords}"/>
+    </notempty>
+    <notempty name="page.description">
+        <meta property="description" name="description" content="{$page.description}"/>
+        <else />
+        <meta property="description" name="description" content="{$setting.description}"/>
+    </notempty>
+
+    <block name="cssjs">
+        <include file="Include/css_js" />
+    </block>
+</head>
+<body>
+
+<div class="g-page-in">
+    <block name="content">
+
+    </block>
+</div>
+
+<script type="text/javascript" src="/Public/Admin/js/my.js"></script>
+</body>
+</html>

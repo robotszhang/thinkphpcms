@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div id="[inputid]" class="upload_img_thumb">
+    <div class="upload_img_thumb_up">
+        <div class="pic">
+            <empty name="page.[inputname]">
+                <img src="__PUBLIC__/Admin/images/nopicture.png" width="100" />
+                <else/>
+                <img src="{$page.[inputname]}" width="160" />
+            </empty>
+            <span class="size"></span>
+            <a class="delete" href="#" data="__PUBLIC__/Admin/images/nopicture.png">×</a>
+        </div>
+        <input class="thumb_path" type="hidden" name="[inputname]" value="{$page.[inputname]}" />
+        <div class="upload_btn"><input id="upload_[inputid]" name="file_upload" type="file" multiple="true" /></div>
+
+
+    </div>
+    <div class="upload_img_thumb_down">
+        <span class="tip_b">格式支持jpg、png、gif，图片大小&lt;2M&nbsp;&nbsp;&nbsp;&nbsp;上传后添加图片到缩略图</span>
+        <div class="upload_img_bank">
+            <!--<div class="container">-->
+                <!--<ul>-->
+                    <!--<volist name="piclist" id="vo">-->
+                        <!--<li>-->
+                            <!--<div class="pic">-->
+                                <!--<div class="pic_in">-->
+                                    <!--<img src="{$vo.path}" width="100" />-->
+                                <!--</div>-->
+                                <!--<div class="size">{$vo.width}×{$vo.height}</div>-->
+                                <!--<a class="add"-->
+                                   <!--onclick="return add_thumb[inputid]('{$vo.path}','{$vo.width}','{$vo.height}');">+</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--</volist>-->
+                <!--</ul>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+    function add_thumb[inputid]($path,$width,$height){
+        $("#[inputid] .upload_img_thumb_up .pic").find('img').attr({'src':$path});
+        $("#[inputid] .upload_img_thumb_up .pic .size").text($width+"×"+$height).show();
+        $("#[inputid] .thumb_path").val($path);
+        return false;
+    };
+    //删除当前选中缩略图
+    $("#[inputid] .upload_img_thumb_up .pic a.delete").click(function(){
+        var nopicture = $(this).attr('data');
+        $("#[inputid] .upload_img_thumb_up .pic").find('img').attr({'src':nopicture});
+        $("#[inputid] .thumb_path").val('');
+        $(".upload_img_thumb_up .pic span.size").hide();
+    });
+    //初始化上传uploadify
+    $('#upload_[inputid]').uploadify({
+        'removeTimeout' : 0,
+        'fileTypeExts' : '*.gif; *.jpg; *.jpeg; *.png',
+        'fileSizeLimit' : '800KB',
+        'formData' : { '{:session_name()}' : '{:session_id()}'},
+        'swf'      : '__PUBLIC__/Plugs/uploadify/uploadify.swf',
+        'uploader' : '{:U("Common/upload_pic_one")}',
+        'buttonImage' : '__PUBLIC__/Plugs/uploadify/btn.png',
+        'width':102,
+        'height':26,
+        'uploadLimit':999,
+        'onUploadSuccess':function(file,data,response){
+            var $data = $.parseJSON(data);
+            if($data.status){
+                var $li = $('<li class=li_'+$data.id+'><div class="pic"><div class="pic_in"><img src="'+$data.path+'" width="100" /></div><div class="size">'+$data.width+'×'+$data.height+'</div><a class="add" onclick="return add_thumb[inputid](\''+$data.path+'\',\''+$data.width+'\',\''+$data.height+'\');">+</a></div></li>');
+                $li.prependTo('#[inputid] .upload_img_thumb_down .container ul');
+            } else {
+                $.mtext($data.info);
+            }
+        }
+    });
+</script>

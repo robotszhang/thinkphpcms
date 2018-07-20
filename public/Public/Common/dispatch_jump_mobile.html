@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title></title>
+    <link href="__PUBLIC__/Common/css/base_mobile.css" rel="stylesheet">
+    <link href="__PUBLIC__/Common/css/jump.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/Plugs/jq/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<?php if(isset($message)) {?>
+<div class="jump success new_pay_complete">
+    <div class="icon-mark">
+        <div class="round jump-success"></div>
+    </div>
+      <div class="main">
+        <!--<div class="big-word"><?php echo($message); ?></div>-->
+        <h3 class="pay_success"><?php echo($message); ?></h3>
+<?php }else{?>
+<div class="jump failed new_pay_complete">
+    <div class="icon-mark">
+        <!--<div class="round jump-failed"></div>-->
+        <div class="" style="height: 100px;width: 100px;margin: 50px auto 0;background: url(__PUBLIC__/Home/images/failed_note.png) no-repeat;background-size: 100% auto;"></div>
+    </div>
+      <div class="main item_char_info">
+        <!--<div class="big-word"><?php echo($error); ?></div>-->
+        <h3 class="pay_success"><?php echo($error); ?></h3>
+<?php }?>
+
+        <p class="note"> <span class="num" id="wait"><?php echo($waitSecond); ?></span>秒钟后将自动跳转</p>
+        <a class="look_detail" id="href" href="<?php echo($jumpUrl); ?>">直接跳转</a>
+    </div>
+</div>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    }
+}, 1000);
+/*
+var $h = $(window).height();
+$(".system-message").css({marginTop:$h/2-144});
+*/
+})();
+</script>
+</body>
+</html>

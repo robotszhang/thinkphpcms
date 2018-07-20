@@ -1,0 +1,119 @@
+<extend name="Include:mother" />
+
+<block name="content">
+    <div class="clearfix">
+        <div class="float-left">
+            <div class="u-breadcrumb">
+                <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+                <span class="name">数据库还原</span>
+            </div>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="h10"></div>
+
+    <div class="alert alert-danger dis_none" role="alert" id="alert">
+        数据库还原中，请勿关闭当前页面！
+    </div>
+
+    <table class="table table-bb">
+        <tr>
+            <th>备份名称</th>
+            <th>卷数</th>
+            <th>压缩</th>
+            <th>数据大小</th>
+            <th>备份时间</th>
+            <th>操作状态</th>
+            <th>操作</th>
+        </tr>
+        <volist name="list" id="data">
+            <tr>
+                <td>{$data.time|date='Ymd-His',###}</td>
+                <td>{$data.part}</td>
+                <td>{$data.compress}</td>
+                <td>{$data.size|format_bytes}</td>
+                <td>{$key}</td>
+                <td>--</td>
+                <td>
+
+                    <a class="btn btn-sm btn-outline-secondary db-import" role="button" href="{:U('import?time='.$data['time'])}"><i class="fa fa-reply"></i> 还原</a>
+                    <a class="btn btn-sm btn-outline-secondary" role="button" href="{:U('del?time='.$data['time'])}" onclick="return del(this);"><i class="fa fa-trash"></i> 删除</a>
+                </td>
+            </tr>
+        </volist>
+    </table>
+
+    <script>
+        $(".db-import").click(function(){
+            var self = this, status = ".";
+
+            $boot.confirm({text:'确认还原该备份？'},function(){
+                $('#alert').removeClass('dis_none');
+                $.get(self.href, success, "json");
+                return false;
+            });
+
+            function success(data){
+                if(data.status){
+                    if(data.gz){
+                        data.info += status;
+                        if(status.length === 5){
+                            status = ".";
+                        } else {
+                            status += ".";
+                        }
+                    }
+                    $(self).parent().prev().text(data.info);
+                    if(data.info == '还原完成！'){
+                        $('#alert').addClass('dis_none');
+                    }
+                    if(data.part){
+                        $.get(self.href,
+                            {"part" : data.part, "start" : data.start},
+                            success,
+                            "json"
+                        );
+                    }  else {
+                        window.onbeforeunload = function(){ return null; }
+                    }
+                } else {
+                    $('#alert').addClass('dis_none');
+                    $boot.warn({text:data.info});
+                }
+            }
+
+
+            return false;
+        });
+
+
+        /**
+         * 删除备份
+         * @param obj
+         * @returns {boolean}
+         */
+        function del(obj){
+            var loading;
+            $boot.confirm({text:'确认删除该备份？'},function(){
+                loading = $boot.loading({text:'删除中...'});
+                $.ajax({
+                    type:'post',
+                    url:$(obj).attr('href'),
+                    success:function(res){
+                        if(res.status == 1){
+                            loading.close();
+                            $boot.success({text:res.info},function(){
+                                window.location.reload();
+                            });
+                        }else{
+                            $boot.error({text:res.info});
+                        }
+                    }
+                });
+            });
+            return false;
+        }
+    </script>
+</block>

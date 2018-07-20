@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta name="wap-font-scale" content="no">  <!--解决UC字体忽然变大-->
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<!-- uc强制竖屏 --><meta name="screen-orientation" content="portrait">
+<!-- UC强制全屏 --> <meta name="full-screen" content="yes">
+<!-- UC应用模式 --> <meta name="browsermode" content="application">
+<!-- QQ强制竖屏 --><meta name="x5-orientation" content="portrait">
+<!-- QQ强制全屏 --><meta name="x5-fullscreen" content="true">
+<!-- QQ应用模式 --><meta name="x5-page-mode" content="app">
+<block name="title">
+	<notempty name="page.title">
+		<title>{$page.title}</title>
+		<else />
+		<title>{$setting.sitename}</title>
+	</notempty>
+</block>
+<notempty name="page.keywords">
+	<meta name="keywords" content="{$page.keywords}"/>
+	<else />
+	<meta name="keywords" content="{$setting.keywords}"/>
+</notempty>
+<notempty name="page.description">
+	<meta property="description" name="description" content="{$page.description}"/>
+	<else />
+	<meta property="description" name="description" content="{$setting.description}"/>
+</notempty>
+
+<block name="head">
+	<include file="Include/cssjs" />
+</block>
+</head>
+<body>
+	<block name="header">
+
+    </block>
+
+	<block name="content">
+
+	</block>
+
+
+	<block name="footer">
+        <include file="Include/footer" />
+    </block>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* CSS Document */
+html,body{ margin:0px; padding:0px; font-size:12px; color:#333; }
+body{box-sizing:border-box;}
+ul,li,dl,dt,dd,p,table{ margin:0px; padding:0px; list-style:none;}
+h1,h2,h3,h4,h5,h6,input,div,form{ margin:0px; padding:0px;}
+a{ color:#333; text-decoration:none; cursor: pointer;}
+a:hover{ text-decoration:none;}
+img{ border:none;vertical-align:middle;}
+table,th,td{ border-collapse:collapse;}
+.clear{ clear:both; overflow:hidden;height:0px;}
+.wrap{ width:1000px; margin:0 auto;}
+.red{ color:#f00; }
+.green{color:#1ec522;}
+.blue{color:#007bff;}
+.orange{color:#ff5402;}
+.pink{color:#f4645f;}
+.b{ font-weight:bold;}
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.f16{ font-size:16px;}
+.f18{ font-size:18px;}
+.bgf7{background:#f7f7f7;}
+.c999{ color:#999;}
+.h10{ height:10px;}
+.h20{ height:20px;}
+.h30{ height:30px;}
+.i{ font-style:italic;}
+.dis_none{ display:none;}
+.dis_block{ display:block;}
+.dis_inlineblock{display:inline-block;}
+.word-break{word-break:break-all; /*支持IE，chrome，FF不支持*/  word-wrap:break-word;/*支持IE，chrome，FF*/}
+em{ font-style:normal;}
+.yahei{ font-family:"微软雅黑";}
+input.text{ border:#aaa 1px solid; height:20px;width:160px; line-height:20px; padding:0 4px; font-size:12px; color:#333;font-family:Arial, Helvetica, sans-serif;}
+input.text_mini{width:40px;}
+input.text_min{width:130px;}
+input.text_mid{width:220px;}
+input.text_max{width:360px;}
+input.text:hover{border:#7eb4ea 1px solid;}
+input.checkbox{ vertical-align:middle;}
+select{font-family:Arial, Helvetica, sans-serif;color:#333;outline:0;border:#aaa 1px solid;font-size:12px;color:#333;}
+textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;color:#333;width:500px;border:#aaa 1px solid;padding:5px;line-height:20px;}
+input.submit,button{font-size:12px; background:#eee; border:#999 1px solid; padding:0 10px; cursor:pointer;vertical-align:middle;}
+input.submit:hover{border:#7eb4ea 1px solid;}
+table.table_form td{ padding:5px;}
+.opacity_5{filter:alpha(opacity=50);    /* ie5-7  */-moz-opacity:0.5;    /* old mozilla browser like netscape  */-khtml-opacity: 0.5;    /* for really really old safari */ opacity: 0.5;}
+.opacity_2{filter:alpha(opacity=20);    /* ie5-7  */-moz-opacity:0.2;    /* old mozilla browser like netscape  */-khtml-opacity: 0.2;    /* for really really old safari */ opacity: 0.2;}
+/*高度类*/
+.h5{ height:10px;}.h10{ height:10px;}.h15{ height:15px;}.h20{ height:20px;}.h25{ height:25px;}.h30{ height:30px;}.h35{ height:35px;}.h40{ height:40px;}.h45{ height:45px;}.h50{ height:50px;}
+/*margin类*/
+.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt15{margin-top:15px;}.mt20{margin-top:20px;}.mt25{margin-top:25px;}.mt30{margin-top:30px;}.mt35{margin-top:35px;}.mt40{margin-top:40px;}.mt45{margin-top:45px;}.mt50{margin-top:50px;}
+.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb15{margin-bottom:15px;}.mb20{margin-bottom:20px;}.mb25{margin-bottom:25px;}.mb30{margin-bottom:30px;}.mb35{margin-bottom:35px;}.mb40{margin-bottom:40px;}.mb45{margin-bottom:45px;}.mb50{margin-bottom:50px;}
+.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml15{margin-left:15px;}.ml20{margin-left:20px;}.ml25{margin-left:25px;}.ml30{margin-left:30px;}.ml35{margin-left:35px;}.ml40{margin-left:40px;}.ml45{margin-left:45px;}.ml50{margin-left:50px;}
+.mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr15{margin-right:15px;}.mr20{margin-right:20px;}.mr25{margin-right:25px;}.mr30{margin-right:30px;}.mr35{margin-right:35px;}.mr40{margin-right:40px;}.mr45{margin-right:45px;}.mr50{margin-right:50px;}
+/*mpadding类*/
+.pt5{padding-top:5px;}.pt10{padding-top:10px;}.pt15{padding-top:15px;}.pt20{padding-top:20px;}.pt25{padding-top:25px;}.pt30{padding-top:30px;}.pt35{padding-top:35px;}.pt40{padding-top:40px;}.pt45{padding-top:45px;}.pt50{padding-top:50px;}
+.pb5{padding-bottom:5px;}.pb10{padding-bottom:10px;}.pb15{padding-bottom:15px;}.pb20{padding-bottom:20px;}.pb25{padding-bottom:25px;}.pb30{padding-bottom:30px;}.pb35{padding-bottom:35px;}.pb40{padding-bottom:40px;}.pb45{padding-bottom:45px;}.pb50{padding-bottom:50px;}
+.pl5{padding-left:5px;}.pl10{padding-left:10px;}.pl15{padding-left:15px;}.pl20{padding-left:20px;}.pl25{padding-left:25px;}.pl30{padding-left:30px;}.pl35{padding-left:35px;}.pl40{padding-left:40px;}.pl45{padding-left:45px;}.pl50{padding-left:50px;}
+.pr5{padding-right:5px;}.pr10{padding-right:10px;}.pr15{padding-right:15px;}.pr20{padding-right:20px;}.pr25{padding-right:25px;}.pr30{padding-right:30px;}.pr35{padding-right:35px;}.pr40{padding-right:40px;}.pr45{padding-right:45px;}.pr50{padding-right:50px;}
+
+.w-30{width:30px !important;}.w-40{width:40px !important;}.w-50{width:50px !important;}.w-60{width:60px !important;}.w-70{width:70px !important;}.w-80{width:80px !important;}.w-90{width:90px !important;}.w-100{width:100px !important;}
+
+.agree {
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.b-display-none {
+    display: none;
+}
+#nav {
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    color: #fff;
+}
+#nav .inside {
+    margin: 0 auto;
+    width: 1200px;
+    height: 40px;
+}
+#nav .inside .name {
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    float: left;
+}
+#nav .inside .name span {
+    font-size: 16px;
+}
+#nav .inside .schedule {
+    margin-left: 10px;
+    width: 200px;
+    height: 40px;
+    float: left;
+}
+#nav .inside .schedule .number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #80AAB7;
+    float: left;
+}
+#nav .inside .schedule .word {
+    width: 160px;
+    height: 40px;
+    float: left;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 16px;
+}
+#nav .inside .active .number {
+    background: #008CBA;
+}
+#nav .inside .active .word {
+    color: #008CBA;
+}
+#out {
+    width: 100%;
+    background: #F8F8F8;
+    overflow: hidden;
+}
+#out .inside {
+    margin: 0 auto;
+    padding: 20px;
+    width: 1180px;
+    background: #fff;
+    box-shadow: 0px 0px 3px #ccc;
+    overflow: hidden;
+}
+#out .inside .agreement {
+    height: 600px;
+    overflow: hidden;
+}
+#out .inside .agreement h2 {
+    height: 60px;
+    line-height: 60px;
+}
+#out .inside .agreement .content {
+    font-size: 20px;
+}
+#out .inside .agreement .admin_hint {
+    color: red;
+}
+#out .inside .create {
+    width: 1180px;
+}
+#out .inside .create .one {
+    padding-left: 20px;
+    width: 1180px;
+    height: 40px;
+    line-height: 40px;
+}
+#out .inside .create .one label {
+    width: 100px;
+}

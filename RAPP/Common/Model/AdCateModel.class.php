@@ -1,0 +1,1 @@
+<?php namespace Common\Model; use Think\Model;class AdCateModel extends Model{    /**     * 获取列表     * @author zjf ${date}     * @return mixed     */    public function get_cate_list(){        $list = $this->order('sort asc,id desc')->select();        return $list;    }}

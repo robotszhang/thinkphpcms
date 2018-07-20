@@ -1,0 +1,87 @@
+<extend name="Include:mother" />
+
+<block name="content">
+
+    <div class="u-breadcrumb">
+        <a class="back" href="javascript:history.back()" ><span class="fa fa-chevron-left"></span> 后退</a>
+        <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
+        <span class="name">新增留言</span>
+    </div>
+    <div class="h15"></div>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>称呼</label>
+            <div class="form-inline">
+                <input type="text" class="form-control" name="nickname" placeholder="称呼" style="width:400px;" value="{$page.nickname}" />
+            </div>
+            <small class="form-text text-muted">1-100个字符</small>
+        </div>
+        <div class="form-group">
+            <label>手机</label>
+            <div class="form-inline">
+                <input type="text" class="form-control" name="phone" placeholder="手机" style="width:400px;" value="" />
+            </div>
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>留言内容</label>
+            <div class="form-inline">
+                <textarea class="form-control" name="body" style="width: 400px;"></textarea>
+            </div>
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>留言时间</label>
+            <include file="Include/picker_datetime" inputname="created_at" placeholder="留言时间" inputvalue="" />
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>留言回复</label>
+            <div class="form-inline">
+                <textarea class="form-control" name="response" style="width: 400px;"></textarea>
+            </div>
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>回复时间</label>
+            <include file="Include/picker_datetime" inputname="response_at" placeholder="回复时间" inputvalue="" />
+            <small class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label>是否显示</label>
+            <div>
+                <eq name="page.is_show" value="0">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="is_show1" name="is_show" class="custom-control-input" value="1">
+                        <label class="custom-control-label" for="is_show1">显示</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="is_show2" name="is_show" class="custom-control-input" value="0" checked>
+                        <label class="custom-control-label" for="is_show2">关闭</label>
+                    </div>
+                <else />
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="is_show1" name="is_show" class="custom-control-input" value="1" checked>
+                        <label class="custom-control-label" for="is_show1">显示</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="is_show2" name="is_show" class="custom-control-input" value="0">
+                        <label class="custom-control-label" for="is_show2">关闭</label>
+                    </div>
+                </eq>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">保存</button>
+    </form>
+
+
+    <script type="text/javascript">
+        //分类切换（需要标志当前pid）
+        $("#itemsids").change(function(){
+            var $id=$(this).val();
+            window.location = "{:U('Ad/add')}"+"?cate_id="+$id;
+        });
+    </script>
+
+</block>

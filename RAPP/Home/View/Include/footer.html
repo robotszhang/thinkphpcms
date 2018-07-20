@@ -1,0 +1,29 @@
+<div class="new_footer_box">
+	<div class="com-footer flex">
+		<a class="item flex-1 <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Index' && ACTION_NAME eq 'index'">current</if>" href="/">
+			<div class="icon"></div>
+			<div class="name">首页</div>
+		</a>
+		<a class="item flex-1 <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Cate'">current</if>" href="{:U('Home/cate/lists')}">
+			<div class="icon"></div>
+			<div class="name">分类</div>
+		</a>
+
+		<a class="item flex-1 <if condition="MODULE_NAME eq 'Activity' && CONTROLLER_NAME eq 'Activity'">current</if>" href="{:U('Activity/Activity/lists')}">
+			<div class="icon"></div>
+			<div class="name">活动</div>
+		</a>
+
+		<a class="item flex-1 <if condition="MODULE_NAME eq 'User' && CONTROLLER_NAME eq 'Cart' && ACTION_NAME eq 'index'">current</if>" href="{:U('User/cart/index')}">
+			<div class="icon"></div>
+			<div class="name">购物车</div>
+			<div class="u-badge">{$cart_num}</div>
+		</a>
+
+		<a class="item flex-1 <if condition="MODULE_NAME eq 'User' && CONTROLLER_NAME neq 'Cart'">current</if>" href="{:U('User/index/index')}">
+			<div class="icon"></div>
+			<div class="name">我的</div>
+		</a>
+	</div>
+</div>
+
