@@ -1,0 +1,61 @@
+[ 2018-07-21T15:13:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016841s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0750s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020243s ]
+
+[ 2018-07-21T15:13:17+08:00 ] 127.0.0.1 /Public/Home/css/public.css?t=1532157197
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-21T15:13:17+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2018-07-21T16:05:23+08:00 ] 127.0.0.1 /Uploads/picture/2017-02-24/58afe7934856c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-07-21T16:05:23+08:00 ] 127.0.0.1 /Uploads/picture/2017-02-24/58afe77593c32.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2018-07-21T16:05:23+08:00 ] 127.0.0.1 /Public/Home/images/page_banner.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-07-21T16:05:23+08:00 ] 127.0.0.1 /Uploads/picture/2018-07-17/5b4d9a50ad12d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-07-21T16:05:23+08:00 ] 127.0.0.1 /Uploads/picture/2017-02-17/58a6a7a73000d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+

@@ -1,0 +1,262 @@
+[ 2018-07-26T20:26:14+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023828s ]
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029413s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.1586s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024593s ]
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/css/reset.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/jquery-3.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/css/public.css?t=1532607975
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/public.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/swiper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/css/swiper.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/fastClick.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/swiper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/public.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/fastClick.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:26:15+08:00 ] 127.0.0.1 /Public/Home/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:29:05+08:00 ] 127.0.0.1 /Uploads/editor/image/20170109/1483943931408485.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2018-07-26T20:29:05+08:00 ] 127.0.0.1 /Uploads/editor/image/20170109/1483943971617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-07-26T20:30:17+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:41+08:00 ] 127.0.0.1 /Public/bootstrap/popper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:41+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:41+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:43+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:43+08:00 ] 127.0.0.1 /Public/bootstrap/popper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:30:43+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:47+08:00 ] 127.0.0.1 /Public/bootstrap/popper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:47+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:48+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:50+08:00 ] 127.0.0.1 /Public/bootstrap/popper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:50+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-26T20:33:50+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载控制器:Public
+

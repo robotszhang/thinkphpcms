@@ -13,6 +13,7 @@ return array(
     'DATA_CACHE_TIME'		=> '1',//'21600',								        // 默认6小时
     'LOG_RECORD' 			=> false, 								        // 开启日志记录
     'DB_DEBUG'              => false,                                       // 数据库调试模式 3.2.3新增
+    'DB_CHARSET'=> 'utf8mb4',
 
     'TMPL_ACTION_ERROR' => './Public/Common/dispatch_jump_mobile.html', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS' => './Public/Common/dispatch_jump_mobile.html', // 默认成功跳转对应的模板文件

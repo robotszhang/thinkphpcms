@@ -1,0 +1,301 @@
+[ 2018-07-27T20:14:39+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0362s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0378s ]
+
+[ 2018-07-27T20:14:39+08:00 ] 127.0.0.1 /Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php 第 5 行.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php 第 13 行.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php 第 17 行.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-07-27T20:14:40+08:00 ] 127.0.0.1 /Admin/Public/verify/t/1532693679.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-07-27T20:14:50+08:00 ] 127.0.0.1 /Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `rg_manager` WHERE `user` = 'master' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `rg_manager` SET `lastlogintime`='1532693690',`lastloginip`='127.0.0.1',`logintimes`='1074' WHERE `id` = 1 [ RunTime:0.0891s ]
+
+[ 2018-07-27T20:14:51+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0325s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0202s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0127s ]
+SQL: SELECT `key`,`value` FROM `rg_setting`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-07-27T20:14:52+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0176s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0159s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0761s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-07-27T20:24:29+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0143s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-07-27T20:24:49+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0858s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0154s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-07-27T20:24:56+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0218s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0141s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_user` [ RunTime:0.0149s ]
+SQL: INSERT INTO `rg_user` (`nickname`) VALUES ('🐲') [ RunTime:0.0786s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0213s ]
+SQL: SELECT `key`,`value` FROM `rg_setting`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-07-27T20:24:56+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0165s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0197s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0188s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-07-27T20:25:43+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0272s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0139s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_user` [ RunTime:0.0147s ]
+SQL: INSERT INTO `rg_user` (`nickname`) VALUES ('🐲') [ RunTime:0.0784s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0105s ]
+SQL: SELECT `key`,`value` FROM `rg_setting`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-07-27T20:25:43+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0169s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0127s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+

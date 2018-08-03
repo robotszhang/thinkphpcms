@@ -16,14 +16,14 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="yingbi">
+      <paths name="券贝">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="券贝">
+      <paths name="哈哈">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -51,7 +51,21 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="海外模板">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="硬币">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="艺星整容">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -73,6 +87,13 @@
         </serverdata>
       </paths>
       <paths name="阿里云国内1_139.196.51.74">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="阿里云国内2_106.15.187.180">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

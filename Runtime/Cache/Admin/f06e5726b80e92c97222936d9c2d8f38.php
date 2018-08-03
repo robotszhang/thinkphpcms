@@ -31,18 +31,15 @@
     <div class="u-breadcrumb">
         <a class="back" href="javascript:history.back()" ><span class="fa fa-chevron-left"></span> 后退</a>
         <a class="back" href="javascript:window.location.reload()" ><span class="fa fa-repeat"></span> 刷新</a>
-        <span class="name">编辑链接</span>
+        <span class="name">新增链接</span>
     </div>
     <div class="h15"></div>
 
-
-
     <form method="post" enctype="multipart/form-data">
-        <input type="hidden" name="id" value="<?php echo ($page["id"]); ?>" />
         <div class="form-group">
             <label><span class="text-danger">* </span>链接分类</label>
-            <select class="form-control" name="cate_id" id="itemsids" style="width:400px;" disabled>
-                <?php if(is_array($catelist)): $i = 0; $__LIST__ = $catelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if(($item["id"]) == $page["cate_id"]): ?><option onclick="selectid(<?php echo ($item["id"]); ?>)" value="<?php echo ($item["id"]); ?>" selected>
+            <select class="form-control" name="cate_id" id="itemsids" style="width:400px;">
+                <?php if(is_array($catelist)): $i = 0; $__LIST__ = $catelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i; if(($item["id"]) == $_GET['cate_id']): ?><option onclick="selectid(<?php echo ($item["id"]); ?>)" value="<?php echo ($item["id"]); ?>" selected>
                             <?php echo ($item["name"]); ?>
                         </option>
                         <?php else: ?>
@@ -59,13 +56,13 @@
         </div>
         <div class="form-group">
             <label>图片</label>
-            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><div id="upload_img_one" class="upload_img_one">	<div class="upload_img_one_left">		<div class="pic">			<?php if(empty($page["thumb"])): ?><img src="/Public/Admin/images/nopicture.png" width="100" />				<?php else: ?>				<img src="<?php echo ($page["thumb"]); ?>" width="160" /><?php endif; ?>			<span class="size"></span>			<a class="delete" href="#" data="/Public/Admin/images/nopicture.png">×</a>		</div>		<input class="thumb_path" type="hidden" name="thumb" value="<?php echo ($page["thumb"]); ?>" />        <label id="upload_upload_img_one" class="u-dmuploader">            <span role="button" class="btn btn-sm btn-primary w-100 mt-1"><span class="fa fa-upload"></span> 上传图片</span>            <input type="file" class="dis_none" />        </label>	</div>	<div class="upload_img_one_right">		<div class="tip">格式支持jpg、png、gif，图片大小&lt;6MB，图片大小<?php echo ($cate_pic_size["width"]); ?>×<?php echo ($cate_pic_size["height"]); ?>px</div>		<div><a class="blue hide_btn" href="#">地址图片</a></div>		<div class="add_block">			<input class="text add_text" type="text" value="" />			<div class="add_btn">添加</div>		</div>	</div>	<div class="clear"></div></div><script type="text/javascript">	//显示-隐藏 缩略图地址添加	$("#upload_img_one .upload_img_one_right a.hide_btn").click(function() {	    var $this = $(this);		if($this.text() == '地址图片') {            $this.parent().siblings('.add_block').show();            $this.text('收起');		} else {            $this.parent().siblings('.add_block').hide();            $this.text('地址图片');		}		return false;	});	//添加缩略图地址	$(".upload_img_one_right .add_btn").click(function(){	    var $this = $(this);		var $val = $this.siblings('.add_text').val();		if($.trim($val) != '') {			$("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':$val});			$("#upload_img_one .thumb_path").val($val);		}	});	//删除当前选中缩略图	$("#upload_img_one .upload_img_one_left .pic a.delete").click(function(){		var nopicture = $(this).attr('data');		$("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':nopicture});		$("#upload_img_one .thumb_path").val('');		$(".upload_img_one_left .pic span.size").hide();	});	//初始化上传uploadify	$size = 6;  //单位：M    //插件地址：https://github.com/danielm/uploader    $('#upload_upload_img_one').dmUploader({        url: '<?php echo U("Common/upload_pic_one");?>',        dataType: 'json',        maxFileSize : $size*1024*1024,  //允许上传的大小，单位KB        allowedTypes: 'image/*',        multiple:false,        extraData:{            '<?php echo session_name();?>' : '<?php echo session_id();?>'        },        onComplete: function(){            //$.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');            console.log('All pending tranfers completed');        },        onUploadProgress: function(id, percent){            //var percentStr = percent + '%';            //$.danidemo.updateFileProgress(id, percentStr);        },        onUploadSuccess: function(id, res){            if(res.status == 1){                $("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':res.path});                $("#upload_img_one .upload_img_one_left .pic .size").text(res.width+"×"+res.height).show();                $("#upload_img_one .thumb_path").val(res.path);            } else {                $boot.error($data.info);            }        },        onUploadError: function(id, message){        },        onFileTypeError: function(file){        },        onFileSizeError: function(file){        },        onFileExtError: function(file){        },        onFallbackMode: function(message){        }    });</script>
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><div id="upload_img_one" class="upload_img_one">	<div class="upload_img_one_left">		<div class="pic">			<?php if(empty($page["thumb"])): ?><img src="/Public/Admin/images/nopicture.png" width="100" />				<?php else: ?>				<img src="<?php echo ($page["thumb"]); ?>" width="160" /><?php endif; ?>			<span class="size"></span>			<a class="delete" href="#" data="/Public/Admin/images/nopicture.png">×</a>		</div>		<input class="thumb_path" type="hidden" name="thumb" value="" />        <label id="upload_upload_img_one" class="u-dmuploader">            <span role="button" class="btn btn-sm btn-primary w-100 mt-1"><span class="fa fa-upload"></span> 上传图片</span>            <input type="file" class="dis_none" />        </label>	</div>	<div class="upload_img_one_right">		<div class="tip">格式支持jpg、png、gif，图片大小&lt;6MB，图片大小<?php echo ($cate_pic_size["width"]); ?>×<?php echo ($cate_pic_size["height"]); ?>px</div>		<div><a class="blue hide_btn" href="#">地址图片</a></div>		<div class="add_block">			<input class="text add_text" type="text" value="" />			<div class="add_btn">添加</div>		</div>	</div>	<div class="clear"></div></div><script type="text/javascript">	//显示-隐藏 缩略图地址添加	$("#upload_img_one .upload_img_one_right a.hide_btn").click(function() {	    var $this = $(this);		if($this.text() == '地址图片') {            $this.parent().siblings('.add_block').show();            $this.text('收起');		} else {            $this.parent().siblings('.add_block').hide();            $this.text('地址图片');		}		return false;	});	//添加缩略图地址	$(".upload_img_one_right .add_btn").click(function(){	    var $this = $(this);		var $val = $this.siblings('.add_text').val();		if($.trim($val) != '') {			$("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':$val});			$("#upload_img_one .thumb_path").val($val);		}	});	//删除当前选中缩略图	$("#upload_img_one .upload_img_one_left .pic a.delete").click(function(){		var nopicture = $(this).attr('data');		$("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':nopicture});		$("#upload_img_one .thumb_path").val('');		$(".upload_img_one_left .pic span.size").hide();	});	//初始化上传uploadify	$size = 6;  //单位：M    //插件地址：https://github.com/danielm/uploader    $('#upload_upload_img_one').dmUploader({        url: '<?php echo U("Common/upload_pic_one");?>',        dataType: 'json',        maxFileSize : $size*1024*1024,  //允许上传的大小，单位KB        allowedTypes: 'image/*',        multiple:false,        extraData:{            '<?php echo session_name();?>' : '<?php echo session_id();?>'        },        onComplete: function(){            //$.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');            console.log('All pending tranfers completed');        },        onUploadProgress: function(id, percent){            //var percentStr = percent + '%';            //$.danidemo.updateFileProgress(id, percentStr);        },        onUploadSuccess: function(id, res){            if(res.status == 1){                $("#upload_img_one .upload_img_one_left .pic").find('img').attr({'src':res.path});                $("#upload_img_one .upload_img_one_left .pic .size").text(res.width+"×"+res.height).show();                $("#upload_img_one .thumb_path").val(res.path);            } else {                $boot.error($data.info);            }        },        onUploadError: function(id, message){        },        onFileTypeError: function(file){        },        onFileSizeError: function(file){        },        onFileExtError: function(file){        },        onFallbackMode: function(message){        }    });</script>
             <small class="form-text text-muted"></small>
         </div>
         <div class="form-group">
             <label>链接</label>
             <div class="form-inline">
-                <input type="text" class="form-control" name="url" placeholder="链接" style="width:400px;" value="<?php echo ($page["url"]); ?>" />
+                <input type="text" class="form-control" name="url" placeholder="链接" style="width:400px;" value="http://" />
             </div>
             <small class="form-text text-muted">链接请以“http://”开头</small>
         </div>
@@ -74,7 +71,7 @@
             <select class="form-control" name="target" style="width:400px;">
                 <?php if(($page["target"]) == "_blank"): ?><option value="_self">_self</option>
                     <option value="_blank" selected>_blank</option>
-                    <?php else: ?>
+                <?php else: ?>
                     <option value="_self" selected>_self</option>
                     <option value="_blank">_blank</option><?php endif; ?>
             </select>
@@ -93,7 +90,7 @@ placeholder
 <?php
  $placeholder = "到期时间"; $placeholder = $placeholder?$placeholder:'选择时间'; ?>
 <div class="input-group" style="width: 200px;">
-    <input type="text" class="form-control form-control-sm" name="end_at" placeholder="<?php echo ($placeholder); ?>" value="<?php echo (date('Y-m-d H:i',$page["end_at"])); ?>" >
+    <input type="text" class="form-control form-control-sm" name="end_at" placeholder="<?php echo ($placeholder); ?>" value="<?php echo date('Y-m-d H:i:s', strtotime('+10 year'));?>" >
     <div class="input-group-append">
         <span class="input-group-text">
             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -108,14 +105,18 @@ placeholder
         locale: "zh"
     });
 </script>
-            <small class="form-text text-muted"></small>
+            <small class="form-text text-muted">默认10年</small>
         </div>
         <button type="submit" class="btn btn-primary">保存</button>
     </form>
 
 
     <script type="text/javascript">
-
+        //分类切换（需要标志当前pid）
+        $("#itemsids").change(function(){
+            var $id=$(this).val();
+            window.location = "<?php echo U('Ad/add');?>"+"?cate_id="+$id;
+        });
     </script>
 
 

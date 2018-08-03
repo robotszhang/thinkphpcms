@@ -1,0 +1,42 @@
+[ 2018-07-30T18:03:07+08:00 ] 127.0.0.1 /Uploads/picture/2017-02-24/58afe7934856c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-07-30T18:03:07+08:00 ] 127.0.0.1 /Uploads/picture/2017-02-17/58a6a7a73000d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-07-30T18:03:07+08:00 ] 127.0.0.1 /Uploads/picture/2018-07-17/5b4d9a50ad12d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-07-30T18:09:53+08:00 ] 127.0.0.1 /Public/bootstrap/popper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-30T18:09:53+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-07-30T18:09:54+08:00 ] 127.0.0.1 /Public/bootstrap/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 无法加载控制器:Public
+
