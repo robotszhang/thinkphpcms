@@ -1,0 +1,409 @@
+[ 2018-08-13T15:17:51+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.053638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.093530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.093564s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2018-08-13T15:17:56+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2018-08-13T15:17:59+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2018-08-13T15:18:05+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.2017s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0943s ]
+
+[ 2018-08-13T15:18:06+08:00 ] 127.0.0.1 /Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php Á¨¨ 5 Ë°å.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php Á¨¨ 13 Ë°å.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php Á¨¨ 17 Ë°å.
+NOTIC: [8] Undefined variable: setting D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\de250c16fd5f3af86313c026bd4ffe6b.php Á¨¨ 20 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.286250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.286285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030605s ]
+
+[ 2018-08-13T15:18:06+08:00 ] 127.0.0.1 /Admin/Public/verify/t/1534144686.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2018-08-13T15:18:13+08:00 ] 127.0.0.1 /Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `rg_manager` WHERE `user` = 'master' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\tpcms\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\tpcms\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `rg_manager` SET `lastlogintime`='1534144693',`lastloginip`='127.0.0.1',`logintimes`='1078' WHERE `id` = 1 [ RunTime:0.0758s ]
+
+[ 2018-08-13T15:18:14+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0287s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0218s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `rg_user` [ RunTime:0.0645s ]
+SQL: INSERT INTO `rg_user` (`nickname`) VALUES ('üê≤') [ RunTime:0.0912s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0103s ]
+SQL: SELECT `key`,`value` FROM `rg_setting`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-08-13T15:18:15+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0236s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0273s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0695s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0427s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2018-08-13T15:18:19+08:00 ] 127.0.0.1 /Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0126s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rg_article_cate` [ RunTime:0.0504s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 16 Ë°å.
+NOTIC: [8] Undefined index: title D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 19 Ë°å.
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 22 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 26 Ë°å.
+SQL: SELECT `id`,`cate_id`,`title`,`title_color`,`url`,`thumb`,`created_at`,`updated_at`,`click`,`body`,`keywords`,`description`,`sort`,`is_stick`,`extattr` FROM `rg_article` ORDER BY is_stick desc,sort,updated_at desc LIMIT 0,30   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 98 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: title D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 112 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-08-13T15:18:21+08:00 ] 127.0.0.1 /Admin/ArticleCate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0217s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0184s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article_cate` [ RunTime:0.0182s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Only variables should be passed by reference D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleCateController.class.php Á¨¨ 12 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` WHERE `cate_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Only variables should be passed by reference D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleCateController.class.php Á¨¨ 12 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` WHERE `cate_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Only variables should be passed by reference D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleCateController.class.php Á¨¨ 12 Ë°å.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-08-13T15:18:24+08:00 ] 127.0.0.1 /Admin/ArticleCate/edit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0205s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_article_cate` [ RunTime:0.0124s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_picture` [ RunTime:0.0774s ]
+SQL: SELECT `id`,`path`,`savename`,`name`,`width`,`height`,`ext`,`md5`,`sha1`,`status`,`addtime` FROM `rg_picture` WHERE `status` = 1 ORDER BY addtime desc LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article_attr` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `rg_article_attr` WHERE `cateid` = 4 ORDER BY sort,id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-08-13T15:18:32+08:00 ] 127.0.0.1 /Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0229s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0185s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_article_cate` [ RunTime:0.0183s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 16 Ë°å.
+NOTIC: [8] Undefined index: title D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 19 Ë°å.
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 22 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 26 Ë°å.
+SQL: SELECT `id`,`cate_id`,`title`,`title_color`,`url`,`thumb`,`created_at`,`updated_at`,`click`,`body`,`keywords`,`description`,`sort`,`is_stick`,`extattr` FROM `rg_article` ORDER BY is_stick desc,sort,updated_at desc LIMIT 0,30   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 98 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: cate_id D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 107 Ë°å.
+NOTIC: [8] Undefined index: title D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 112 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\8e35d541e8f27addc64a8b0f0e68393b.php Á¨¨ 147 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-08-13T15:18:36+08:00 ] 127.0.0.1 /Admin/Article/edit/id/75/jump_url/AnlUuIMwADMwADMwADM.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0203s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0139s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_article_cate` [ RunTime:0.0131s ]
+SQL: SELECT `id`,`name_cn`,`name_en`,`path`,`fullpath`,`sort`,`thumb`,`is_able`,`is_show` FROM `rg_article_cate` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `rg_article_cate` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`cate_id`,`title`,`title_color`,`url`,`thumb`,`created_at`,`updated_at`,`click`,`body`,`keywords`,`description`,`sort`,`is_stick`,`extattr` FROM `rg_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_article_attr` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `rg_article_attr` WHERE `cateid` = 3 ORDER BY sort,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tpcms\RAPP\Admin\Controller\ArticleController.class.php Á¨¨ 134 Ë°å.
+SQL: SHOW COLUMNS FROM `rg_picture` [ RunTime:0.0123s ]
+SQL: SELECT `id`,`path`,`savename`,`name`,`width`,`height`,`ext`,`md5`,`sha1`,`status`,`addtime` FROM `rg_picture` WHERE `status` = 1 ORDER BY addtime desc LIMIT 0,4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant editsize - assumed 'editsize' D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\4cd1948798d841bb75f0e5ee2a9eeaaa.php Á¨¨ 289 Ë°å.
+NOTIC: [8] Undefined index: value D:\xampp\htdocs\tpcms\Runtime\Cache\Admin\4cd1948798d841bb75f0e5ee2a9eeaaa.php Á¨¨ 330 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-08-13T16:18:30+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0191s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0152s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `rg_user` [ RunTime:0.0146s ]
+SQL: INSERT INTO `rg_user` (`nickname`) VALUES ('üê≤') [ RunTime:0.1029s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0121s ]
+SQL: SELECT `key`,`value` FROM `rg_setting`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-08-13T16:18:30+08:00 ] 127.0.0.1 /Admin/Index/index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `rg_setting` [ RunTime:0.0189s ]
+SQL: SELECT `id`,`name`,`key`,`value`,`widget`,`tip`,`type`,`sort` FROM `rg_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0183s ]
+SQL: SELECT `id`,`user`,`pass`,`nickname`,`lastlogintime`,`lastloginip`,`logintimes` FROM `rg_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rg_article` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_article` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `rg_guestbook` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_guestbook` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_ad` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_ad` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rg_manager` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rg_manager` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+

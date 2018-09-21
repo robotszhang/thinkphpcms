@@ -10,40 +10,61 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RootController.class.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/Controller/RootController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopController.class.php" pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/TopController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>top-alert</find>
-      <find>mod_default_002</find>
-      <find>close-btn</find>
-      <find>bjyadmin</find>
-      <find>banner</find>
-      <find>&quot;img/</find>
-      <find>navbar</find>
-      <find>new_footer_box</find>
-      <find>slide</find>
-      <find>main</find>
-      <find>header</find>
-      <find>header-title</find>
-      <find>#header</find>
-      <find>fast-links</find>
-      <find>hot-title</find>
-      <find>swiper</find>
-      <find>info_tit</find>
-      <find>past_info_join</find>
-      <find>color:#f5bc3b</find>
-      <find>inner_header</find>
-      <find>/Public</find>
-      <find>com_header</find>
-      <find>remind_deliver</find>
-      <find>wx_info</find>
-      <find>get_user_info</find>
-      <find>pop_show_pay</find>
-      <find>address_info</find>
-      <find>option_case</find>
-      <find>com-develop</find>
-      <find>Qqq</find>
+      <find>u-list-item</find>
+      <find>my_address_box</find>
+      <find>head_title</find>
+      <find>m-form_input</find>
+      <find>m-address</find>
+      <find>com_goods_box</find>
+      <find>custom_ask</find>
+      <find>suggest_char</find>
+      <find>com-goods-list</find>
+      <find>attach_list</find>
+      <find>m-search_box</find>
+      <find>m-crumb_box</find>
+      <find>com_title_border</find>
+      <find>matching_result</find>
+      <find>fun-total-score</find>
+      <find>m-goodslist-baoshui</find>
+      <find>product_img</find>
+      <find>china_all_shop</find>
+      <find>PI</find>
+      <find>u-checkbox</find>
+      <find>last_user_address_detail</find>
+      <find>fun-used-score</find>
+      <find>IMAGE_THUMB_SCALE</find>
+      <find>确认</find>
+      <find>$use_the_whole_order_as_fee</find>
+      <find>$pid</find>
+      <find>fun-use-score</find>
+      <find>alert_item</find>
+      <find>order_deta</find>
+      <find>serial</find>
     </findStrings>
     <replaceStrings>
       <replace>/Public</replace>
@@ -56,6 +77,17 @@
       <replace>color:#f8cf73</replace>
       <replace>__PUBLIC__</replace>
       <replace>qq</replace>
+      <replace>m-goods-detail-choose</replace>
+      <replace>js-btn-address</replace>
+      <replace>input_text</replace>
+      <replace>m-add_address-form</replace>
+      <replace>item</replace>
+      <replace>js-btn-collect</replace>
+      <replace>name</replace>
+      <replace>input-text</replace>
+      <replace>pi</replace>
+      <replace>js-used-score</replace>
+      <replace>js-use-score</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -64,57 +96,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RAPP/Admin/View/Article/edit.html" />
-        <option value="$PROJECT_DIR$/RAPP/Admin/Controller/ArticleCateController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Home/View/Include/head.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/public/Public/Home/css/reset.css" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/View/GoodsOrder/ajax_list.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/View/GoodsOrder/lists.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/View/GoodsOrder/lists.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/View/Public/regist.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Home/View/Include/wx.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/TopController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/ThinkPHP/Conf/convention.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/Lib/LibWeixin.class.php" />
-        <option value="$PROJECT_DIR$/RAPP/Admin/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/RAPP/Common/Conf/config.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/Controller/PublicController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/Conf/config.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/Conf/config.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/Controller/MemberController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/Conf/config.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Home/Conf/config.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/View/Public/login.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Admin/View/Public/login.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Admin/View/Index/index.html" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/zhikang.whrango.com/RAPP/Home/Controller/CaseController.class.php" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/zhikang.whrango.com/RAPP/Home/View/Case/index.html" />
-        <option value="$PROJECT_DIR$/RAPP/Admin/View/Public/login.html" />
-        <option value="$PROJECT_DIR$/RAPP/Admin/View/Index/index.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/Lib/LibUser.class.php" />
-        <option value="&lt;43f58291-87a6-4121-86ba-c472eb787322&gt;/home/wwwroot/www.yunxiafs.com/Application/Home/View/Include/footer.html" />
-        <option value="&lt;43f58291-87a6-4121-86ba-c472eb787322&gt;/home/wwwroot/www.yunxiafs.com/Application/Home/View/Include/header.html" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/hhhysc.com/RAPP/Admin/View/Article/add.html" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/hhhysc.com/RAPP/Home/View/About/index.html" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/hhhysc.com/Public/Home/css/public.css" />
-        <option value="&lt;6689e574-e976-4c5f-a52e-c999c3913364&gt;/home/wwwroot/hhhysc.com/index.php" />
-        <option value="&lt;43f58291-87a6-4121-86ba-c472eb787322&gt;/home/wwwroot/www.yunxiafs.com/Application/Home/View/Include/left_menu.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Home/View/Include/cssjs.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/public/index.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Home/Controller/RootController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Home/Controller/IndexController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Home/Controller/DanyeController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Home/Controller/GxyzController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/gcsczy.com/.env" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/gcsczy.com/public/index.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/gcsczy.com/public/resources/admin/css/style.css" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/Controller/GoodsController.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Common/Lib/LibGoods.class.php" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/public/Public/Home/css/public.css" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/View/GoodsOrder/confirm_order.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/View/Goods/add.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/Admin/View/Goods/edit.html" />
-        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/wx.whfsy.top/RAPP/User/Controller/GoodsOrderController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/User/View/Guestbook/phone.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Admin/css/style.css" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Index/guess_item.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Home/js/my.js" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Home/js/common.js" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Common/TopController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Index/index_item.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Goods/nosearch.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Include/item.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Goods/search.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Goods/nodata.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Include/goods_item.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Include/js_collect.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Include/amap_choose.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Common/Conf/config.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Include/mother.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Include/wx.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/Controller/PublicController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Home/css/reset.css" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Doors/index.html" />
+        <option value="&lt;42ed0467-de24-46a6-a2eb-0605649fe756&gt;/home/wwwroot/moonmost.com.cn/RAPP/Common/Conf/db.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/Controller/DoorsController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/User/Controller/FileController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Home/css/style_o.css" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Goods/edit.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Goods/add.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Common/Lib/LibGoods.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/User/View/Include/component_upload.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/GoodsOrder/lists_deal.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/User/View/GoodsOrder/confirm_order.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/User/Controller/GoodsOrderController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/GoodsOrder/orderdetail.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/GoodsOrder/lists_return.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/GoodsOrder/lists_iframe_return.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/Controller/GoodsOrderController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Nav/index.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/Controller/IndexController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Goods/lists.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/Controller/GoodsController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Cate/lists.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/public/Public/Home/css/style.css" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Home/View/Index/index.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Common/Lib/LibUser.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/GoodsOrder/lists.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Common/Common/function.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Member/detail.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Include/mother.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/Controller/MemberController.class.php" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Member/memberlist.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/View/Member/level.html" />
+        <option value="&lt;99bc53ee-1f37-44c8-a440-8dde0ebad19c&gt;/home/wwwroot/u.whrango.com/RAPP/Admin/Controller/RootController.class.php" />
       </list>
     </option>
   </component>
@@ -125,8 +157,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
+    <option name="y" value="-23" />
     <option name="width" value="1932" />
     <option name="height" value="1057" />
   </component>
@@ -145,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,21 +209,7 @@
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Plugs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
@@ -202,26 +220,51 @@
               <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="RAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="RAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Conf" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="RAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Article" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="RAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Guestbook" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tpcms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpcms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="RAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Include" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravelcms" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -292,19 +335,36 @@
       <workItem from="1533084989156" duration="9509000" />
       <workItem from="1533133167328" duration="1602000" />
       <workItem from="1533172860454" duration="5866000" />
-      <workItem from="1533267080460" duration="437000" />
+      <workItem from="1533267080460" duration="3493000" />
+      <workItem from="1533297723049" duration="138000" />
+      <workItem from="1533483943340" duration="844000" />
+      <workItem from="1533885021173" duration="6277000" />
+      <workItem from="1534126735741" duration="3077000" />
+      <workItem from="1534210549256" duration="4073000" />
+      <workItem from="1534261711155" duration="718000" />
+      <workItem from="1534386080668" duration="1663000" />
+      <workItem from="1534408764415" duration="807000" />
+      <workItem from="1534422211540" duration="842000" />
+      <workItem from="1534468372929" duration="25378000" />
+      <workItem from="1534555094335" duration="27595000" />
+      <workItem from="1534657223173" duration="4768000" />
+      <workItem from="1534666475406" duration="6899000" />
+      <workItem from="1534767032603" duration="9229000" />
+      <workItem from="1534813474147" duration="8093000" />
+      <workItem from="1534863281231" duration="12293000" />
+      <workItem from="1534901204611" duration="29658000" />
+      <workItem from="1535080567826" duration="752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267999000" />
+    <option name="totallyTimeSpent" value="414159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -335,37 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Manager/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Manager/repass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/Controller/ManagerController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="64" lean-forward="false" selection-start-line="118" selection-start-column="64" selection-end-line="118" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Ad/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="119" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Common/Conf/url.php" />
-    <entry file="file://$PROJECT_DIR$/RAPP/Common/TagLib/Rg.class.php" />
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Message/lists.html" />
     <entry file="file://$PROJECT_DIR$/RAPP/Admin/Controller/DistributionController.class.php" />
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Template/TagLib/Cx.class.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -531,20 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/ArticleCate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4060">
-          <caret line="255" column="5" lean-forward="true" selection-start-line="212" selection-start-column="4" selection-end-line="255" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Article/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="107" column="4" lean-forward="true" selection-start-line="107" selection-start-column="4" selection-end-line="110" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Article/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -553,13 +568,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RAPP/Admin/Controller/ArticleAttrController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/ArticleAttr/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -647,20 +655,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3552">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1532077731095" expanded="true" signature="842:849" ph="×" />
-            <marker date="1532077731095" expanded="true" signature="2178:2191" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="2229:2258" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="3166:3179" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="3217:3245" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="4144:4157" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="4195:4223" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="5404:5411" ph="×" />
-            <marker date="1532077731095" expanded="true" signature="6868:6875" ph="×" />
-            <marker date="1532077731095" expanded="true" signature="8331:8542" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="8592:8780" ph="..." />
-            <marker date="1532077731095" expanded="true" signature="8796:8893" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/ArticleAttr/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/ArticleCate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4454">
+          <caret line="255" column="5" lean-forward="false" selection-start-line="212" selection-start-column="4" selection-end-line="255" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/ArticleCate/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Guestbook/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Include/picker_datetime.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Guestbook/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Guestbook/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Public/Admin/js/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7038">
+          <caret line="414" column="1" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="414" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/Controller/CommonController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RAPP/Admin/View/Article/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="102" column="114" lean-forward="false" selection-start-line="102" selection-start-column="114" selection-end-line="102" selection-end-column="122" />
         </state>
       </provider>
     </entry>
